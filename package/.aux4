@@ -1,0 +1,70 @@
+{
+  "scope": "aux4",
+  "name": "system-installer-apt",
+  "description": "aux4 system installer for apt",
+  "version": "0.0.1",
+  "plaforms": [
+    "linux"
+  ],
+  "dependencies": [
+    "aux4/pkger"
+  ],
+  "tags": [
+    "aux4",
+    "system-installer",
+    "apt"
+  ],
+  "profiles": [
+    {
+      "name": "aux4:pkger:system",
+      "commands": [
+        {
+          "name": "apt",
+          "execute": [
+            "profile:aux4:pkger:system:apt"
+          ],
+          "help": {
+            "text": "manage apt packages"
+          }
+        } 
+      ]
+    },
+    {
+      "name": "aux4:pkger:system:apt",
+      "commands": [
+        {
+          "name": "install",
+          "execute": [
+            "apt install ${package}"
+          ],
+          "help": {
+            "text": "install apt package",
+            "variables": [
+              {
+                "name": "package",
+                "text": "package name",
+                "arg": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "uninstall",
+          "execute": [
+            "apt uninstall ${package}"
+          ],
+          "help": {
+            "text": "uninstall apt package",
+            "variables": [
+              {
+                "name": "package",
+                "text": "package name",
+                "arg": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,2 +1,2 @@
 # system-installer-apt
-aux4 System Installer apt
+aux4 system installer apt
