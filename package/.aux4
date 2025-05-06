@@ -2,8 +2,8 @@
   "scope": "aux4",
   "name": "system-installer-apt",
   "description": "aux4 system installer for apt",
-  "version": "0.0.1",
-  "plaforms": [
+  "version": "0.0.5",
+  "platforms": [
     "linux"
   ],
   "dependencies": [
