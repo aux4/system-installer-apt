@@ -2,7 +2,7 @@
   "scope": "aux4",
   "name": "system-installer-apt",
   "description": "aux4 system installer for apt",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "platforms": [
     "linux"
   ],
@@ -35,7 +35,7 @@
         {
           "name": "install",
           "execute": [
-            "apt install ${package}"
+            "apt install -y ${package}"
           ],
           "help": {
             "text": "install apt package",
@@ -51,7 +51,7 @@
         {
           "name": "uninstall",
           "execute": [
-            "apt uninstall ${package}"
+            "apt remove -y ${package}"
           ],
           "help": {
             "text": "uninstall apt package",
