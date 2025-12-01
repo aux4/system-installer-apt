@@ -2,7 +2,7 @@
   "scope": "aux4",
   "name": "system-installer-apt",
   "description": "aux4 system installer for apt (Linux)",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "platforms": [
     "linux"
   ],
