@@ -3,6 +3,7 @@
   "name": "system-installer-apt",
   "description": "aux4 system installer for apt (Linux)",
   "version": "0.1.2",
+  "git": "https://github.com/aux4/system-installer-apt",
   "platforms": [
     "linux"
   ],
