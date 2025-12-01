@@ -31,7 +31,7 @@ This runs apt install -y curl on the host. Run the command as root or prefix wit
 
 Use this for the common case: installing a single apt package by name.
 
-The command is available at [aux4 aux4 pkger system apt install](./commands/pkger/system/apt/install).
+The command is available at [aux4 aux4 pkger system apt install](./commands/aux4/pkger/system/apt/install).
 
 ```bash
 aux4 aux4 pkger system apt install <package>
@@ -43,7 +43,7 @@ Replace <package> with the package name (for example, curl). The command expands
 
 Remove a package with the corresponding uninstall action. This maps to `apt remove -y ${package}`.
 
-The command is available at [aux4 aux4 pkger system apt uninstall](./commands/pkger/system/apt/uninstall).
+The command is available at [aux4 aux4 pkger system apt uninstall](./commands/aux4/pkger/system/apt/uninstall).
 
 ```bash
 aux4 aux4 pkger system apt uninstall <package>
