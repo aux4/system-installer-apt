@@ -1,7 +1,7 @@
 {
   "scope": "aux4",
   "name": "system-installer-apt",
-  "description": "aux4 system installer for apt",
+  "description": "aux4 system installer for apt (Linux)",
   "version": "0.1.0",
   "platforms": [
     "linux"
@@ -12,7 +12,12 @@
   "tags": [
     "aux4",
     "system-installer",
-    "apt"
+    "system-installer-linux",
+    "linux",
+    "apt",
+    "ubuntu",
+    "debian",
+    "mint"
   ],
   "profiles": [
     {
@@ -24,7 +29,16 @@
             "profile:aux4:pkger:system:apt"
           ],
           "help": {
-            "text": "manage apt packages"
+            "text": "Manage apt packages"
+          }
+        },
+        {
+          "name": "linux",
+          "execute": [
+            "profile:aux4:pkger:system:apt"
+          ],
+          "help": {
+            "text": "Manage linux packages"
           }
         }
       ]
@@ -38,11 +52,11 @@
             "apt install -y ${package}"
           ],
           "help": {
-            "text": "install apt package",
+            "text": "Install apt package",
             "variables": [
               {
                 "name": "package",
-                "text": "package name",
+                "text": "The package name",
                 "arg": true
               }
             ]
@@ -54,11 +68,11 @@
             "apt remove -y ${package}"
           ],
           "help": {
-            "text": "uninstall apt package",
+            "text": "Uninstall apt package",
             "variables": [
               {
                 "name": "package",
-                "text": "package name",
+                "text": "The package name",
                 "arg": true
               }
             ]
